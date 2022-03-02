@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="survey-form.css">
+</head>
+<body>
+	<div id="header">
+		<h2 id="title">freeCodeCamp Survey Form</h2>
+	</div>
+
+	<p id="description">Thank you for taking the time to help us improve the platform</p>
+	
+	<div id="form">
+	<form id="survey-form">
+		<div class="all">
+		<label id="name-label">Name
+			<div>	
+				<input type="text" id="name" placeholder="Enter your name" class="color" required>
+			</div>
+		</label>
+
+		<label id="email-label">Email
+			<div>
+				<input type="Email" id="email" placeholder="Enter your Email" class="color" required>
+			</div>
+		</label>
+
+		<label id="number-label">Age(optional)
+			<div>
+				<input type="Age" id="number" placeholder="Age" min="10" max="100" class="color">
+			</div>
+		</label>
+
+		<label id="dropdown-label">Which option best describes your current role?
+			<div>
+				<input type="text" id="dropdown" placeholder="Select current role" class="color" required>
+			</div>
+		</label>
+
+		<label>Would you recommend freeCodeCamp to a friend?</label>
+
+		<div type="radio-buttons">
+			<label for="definitely">
+				<div> 
+					<input id="definitely" type="radio" name="recommendation" value="Definitely">   Definitely
+				</div> 
+			</label>
+
+			<label for="maybe">
+				<div> 
+					<input id="maybe" type="radio" name="recommendation" value="Maybe">   Maybe
+				</div>
+			</label>
+
+			<label for="not-sure"> 
+				<div>
+					<input id="not-sure" type="radio" name="recommendation" value="Not sure">   Not sure
+				</div>
+			</label>
+		</div>
+
+		<div id="checkbox">
+			<label>What would you like to see improved?</label>
+			<div>
+				<label for="front-end-projects">
+					<input id="front-end-projects" type="checkbox" name="Improvements" value="Front-end Projects">   Front-end Projects
+				</label>
+			</div>
+
+			<div>
+				<label for="back-end-projects">
+					<input id="back-end-projects" type="checkbox" name="Improvements" value="Back-end Projects">   Back-end Projects
+				</label>
+			</div>
+
+			<div>
+				<label for="data-visualization">
+					<input id="data-visualization" type="checkbox" name="Improvements" value="Data Visualization">   Data Visualization
+				</label>
+			</div>
+
+			<div>
+				<label for="challenges">
+					<input id="challenges" type="checkbox" name="Improvements" value="Challenges">   Challenges
+				</label>
+			</div>
+
+			<div>
+				<label for="videos">
+					<input id="videos" type="checkbox" name="Improvements" value="Videos">   Videos
+				</label>
+			</div>
+
+			<div>
+				<label for="forum">
+					<input id="forum" type="checkbox" name="Improvements" value="Forum">   Forum
+				</label>
+			</div>
+
+		</div>
+
+		<div>
+			<label>Any comments or suggestions?
+				<div>
+					<textarea placeholder="Enter your comment here..." rows="5" cols="60"></textarea>
+				</div>
+			</label>
+
+			<button id="submit">Submit</button>
+		</div>
+	</div>
+	</form>
+</div>
+	
+</body>
+</html>
+
+
